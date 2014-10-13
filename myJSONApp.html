@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>
+Animation
+</title>
+<link rel="stylesheet" href="myJSONAppStyles.css">
+<!--link rel="stylesheet" href="Qunit.css"-->
+</head>
+<body>
+	<div class="mainContainer" >
+		<div class="mainMenu" >
+			<input class="pauseOrResume" type="button" value="Pause Animation" >
+			<input class="goBack" type="button" value="Back to Tables" />
+			<input type="search" class="searchTables" placeholder="Search your tables" />
+			<input type="button" class="proceed" value="Proceed to Charts"/>
+		</div>
+		<div class="small progress" >
+			<div></div>
+		</div>
+		<div id="myTablesView">
+			<canvas id="myCanvas">
+			Sorry.Your Browser doesnt support canvas.Upgrade to the latest version of Internet Explorer.
+			</canvas>
+		</div>
+		<div id="myRecordsView" >
+		</div>
+		<div id="qunit"></div>
+	</div>
+	<script type="text/javascript" src="problems.js"></script>
+	<script type="text/javascript" src="typedarray.js"></script>
+	<script type="text/javascript" src="three.js"></script>
+	<script type="text/javascript" src="jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="underscore.js"></script>
+	<script type="text/javascript" src="backbone.js"></script>
+	<script type="text/javascript" src="modernizr.js"></script>
+	<!--script type="text/javascript" src="Qunit.js"></script-->
+	<script type="text/javascript" src="myJSONAppUtils.js"></script>
+	<script type="text/javascript" src="myJSONAppModels.js"></script>
+	<script type="text/javascript" src="myJSONAppViews.js"></script>
+	<script type="text/javascript" src="myJSONAppMain.js"></script>
+	<!--script type="text/javascript" src="myJSONAppUnitTest.js"></script-->
+</body>
+</html>
