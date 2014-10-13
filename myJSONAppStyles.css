@@ -1,0 +1,185 @@
+
+.mainContainer{
+	border:1px solid;
+	border-radius:10px;
+	margin:auto;
+	position:relative;
+	width:960px;
+	height:auto;
+	background-color: #000;
+	*width:100%;
+}
+
+.no-canvas .mainContainer{
+	background-color: #FFF;
+}
+.no-canvas .mainContainer #myTablesView{
+	background-color: #FFF;
+	height:600px;
+}
+
+.mainContainer .mainMenu{
+	height: auto;
+	display: inline-block;
+	width: 100%;
+}
+
+.mainContainer .mainMenu input{
+	width:30%;
+	font-size: 17px;
+	position: relative;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #9494D6;
+	background-color: #FFF;
+	cursor:pointer;
+}
+
+.mainContainer .mainMenu .goBack{
+	display:none;
+}
+
+.mainContainer #myTablesView ,.mainContainer #myTablesView #myCanvas,.mainContainer #myRecordsView{
+	width:100% ;
+	height:600px ;
+	border-radius:10px;
+	background-color: #000;
+}
+
+.mainContainer #myTablesView #myCanvas{
+	height:100%;
+	cursor:pointer;
+}
+
+.mainContainer #myRecordsView{
+	background-color: #FFF;
+	display:none;
+	animation:fadeIn 3s;
+	-webkit-animation:fadeIn 5s; 
+}
+
+.highcharts-container{
+	height:587px !important;
+	width:100%;
+}
+
+
+
+/* spinner with CSS*/
+
+@-webkit-keyframes sweep {
+ to {
+	  -webkit-transform: rotate(360deg);
+	  -ms-transform: rotate(360deg); 
+	  transform: rotate(360deg);
+  } 
+}
+
+ @keyframes fadeIn
+{
+	from {
+			display:block;
+			opacity:0;
+		}
+	to {
+			display:block;
+			opacity:1;
+		}
+}
+
+ @-webkit-keyframes fadeIn 
+{
+	from {
+			display:block;
+			opacity:0;
+		}
+	to {
+			display:block;
+			opacity:1;
+		}
+}
+
+.progress {
+	position: relative;
+	display: inline-block;
+	margin: 0 .5em;
+	font-size: 12px;
+	text-indent: 999em;
+	overflow: hidden;
+	-webkit-animation: sweep 1s infinite linear;
+	animation: sweep 1s infinite linear;
+	border-radius:75px;
+	left:50%;
+	display:none;
+	visibility: visible;
+}
+
+.small.progress {
+	font-size: 6px;
+	width: 30px;
+	height: 30px;
+}
+
+.large.progress {
+	font-size: 24px;
+	width: 150px;
+	height: 150px;
+}
+
+.progress:before,
+.progress:after,
+.progress > div:before,
+.progress > div:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 2.25em; /* (container width - part width)/2  */
+	width: .5em;
+	height: 1.5em;
+	border-radius: .2em;
+	background: #eee;
+	box-shadow: 0 3.5em #eee; /* container height - part height */
+	-webkit-transform-origin: 50% 2.5em; /* container height / 2 */
+	-ms-transform-origin: 50% 2.5em; /* container height / 2 */
+	transform-origin: 50% 2.5em; /* container height / 2 */
+}
+
+.progress:before {
+	background: #555;
+}
+
+.progress:after {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	background: #777;
+}
+
+.progress > div:before {
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	background: #999;
+}
+
+.progress > div:after {
+	-webkit-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+	background: #bbb;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .mainContainer{
+    	width:100%;
+    	height:100%;
+    }
+    .mainContainer #myTablesView ,.mainContainer #myTablesView #myCanvas,.mainContainer #myRecordsView,.highcharts-container,svg{
+    	height:90% !important;
+    	width:100% !important;
+    }
+    .mainContainer .mainMenu input{
+		font-size: 10px
+	}
+}
